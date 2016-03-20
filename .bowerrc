@@ -1,0 +1,9 @@
+{
+  "name" : "HelloWord",
+  "version": "0.1",
+  "dependencies" : {
+    "jquery" : "latest"
+  },
+  "directory" : "www/libs"
+  
+}

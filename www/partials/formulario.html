@@ -1,0 +1,37 @@
+<h2>{{editCtrl.Titulo}}</h2>
+{{editCtrl.params}}
+<form name="formFiscalizados">
+  <input type="hidden" ng-model="editCtrl.item.id" >
+  <input type="text" placeholder="Fizcalia" ng-model="editCtrl.item.fiscalia" >
+  <input type="text" placeholder="Equipo"   ng-model="editCtrl.item.equipo">
+
+
+
+  <!--
+      
+  <select ng-options="item.tipo for item in pescados" ng-model="variedad">
+	<option value="">Seleccione</option>
+  </select>
+-->
+        <ul class="table-view" >
+            <li class="table-view-cell">
+                <a class="navigate-right control-item" ng-href="#/listaVariedades">{{editCtrl.item.variedad}}</a>
+            </li>
+        </ul>
+        <input type="number" placeholder="Cantidad" ng-model="editCtrl.item.cantidad">
+        
+        <input type="number" placeholder="Medida Mayor" ng-model="editCtrl.item.medida_mayor">
+        
+        <textarea rows="5" placeholder="Observaciones" ng-model="editCtrl.item.observaciones"></textarea>
+
+
+        <div class="segmented-control">
+            <a class="control-item" ng-click="editCtrl.save()">Guardar</a>
+            <a class="control-item" ng-click="editCtrl.saveAndClear()">Finalizar</a>
+            <a class="control-item" ng-href="#/home">Cancelar</a>
+        </div>
+
+
+
+
+</form>

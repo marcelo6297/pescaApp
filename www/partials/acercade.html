@@ -1,0 +1,12 @@
+<h1>{{appDefault.autor}}</h1>
+<h2>{{appDefault.titulo}}</h2>
+<h2>{{appDefault.descripcion}}</h2>
+
+Tecnologias utilizadas:
+
+<ul ng-repeat="item in appDefault.tecnologias">
+	<li><a >{{item}}</a></li>
+</ul>
+
+<a ng-click="initdb()">Inicializar BBDD</a>
+<a ng-click="dropdb()">Drop BBDD</a>

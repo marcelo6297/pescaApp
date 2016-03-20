@@ -1,0 +1,9 @@
+﻿<input type="search" ng-model="filterVariedad" placeholder="Buscar variedad">
+<ul class="table-view" ng-repeat="item in listCtrl.pescados | filter:filterVariedad ">
+    <li class="table-view-cell">
+        <a class="navigate-right" ng-click="listCtrl.setVariedad(item.tipo)" ng-href="{{ listCtrl.getUrl() }}">
+            {{ item.tipo}} 
+        </a>
+    </li>
+    
+</ul>

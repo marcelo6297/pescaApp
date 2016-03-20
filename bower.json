@@ -1,0 +1,41 @@
+{
+  "name": "HelloWord",
+  "description": "Archivo de ejemplo para desarrollo de app moviles",
+  "main": "",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "bower",
+    "cordova",
+    "es6",
+    "mobile",
+    "angular",
+    "android"
+  ],
+  "authors": [
+    "marcelo flores"
+  ],
+  "license": "MIT",
+  "homepage": "localhost",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1",
+    "ngCordova": "^0.1.24-alpha",
+    "angular-route": "^1.5.0",
+    "ratchet": "^2.0.2",
+    "angular-websql": "^1.0.2"
+  }
+}

@@ -1,0 +1,22 @@
+
+	<a href="#/home" id='home'>Listado</a>
+	<a href="#/formulario" id='formulario'>Agregar datos</a>
+    <a ng-click="initdb()">Inicializar BBDD</a>
+    <a ng-click="dropdb()">Borrar tablas</a>
+	<input type="search" ng-model="filterFiscalizados" placeholder="Buscar fiscalizados">
+    total fiscalizados: {{fiscalizados.length}}		
+	<ul ng-repeat = "item in fiscalizados | filter:filterFiscalizados">
+		<li> 
+			<p> 
+				id: <a>{{item.id}},</a>  
+				Fiscalia: <a>{{item.fiscalia}},</a>  
+				Equipo: <a>{{item.equipo}}</a>, 
+                variedad: <a>{{item.variedad}}</a> 
+				cantidad: <a>{{item.cantidad}}</a>
+				Medida Mayor: <a>{{item.medida_mayor}}</a>
+				Observaciones: <a>{{item.observaciones}}</a>
+			<a ng-href="#/edit/{{item.id}}"><span class="icon icon-edit" ></span></a>
+			</p>
+		</li>
+	</ul>
+	
